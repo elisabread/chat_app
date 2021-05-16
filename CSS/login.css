@@ -1,0 +1,92 @@
+body{
+    margin: 0px;
+    background-image: url(../IMAGES/gradd.jpg);
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: darkslategrey;
+}
+
+.loginPage{
+    font-family: 'Roboto', sans-serif;
+}
+
+.panel{
+    width: 40vw;
+    height: 80vh;
+    background-color: white;
+    margin: 2vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+}
+
+#anInput{
+    font-size: 16px;
+    width: 24vw;
+    margin: 2vh;
+    background-color: transparent;
+    border: 0px;
+    border-bottom: 2px solid cadetblue;
+}
+
+.button{
+    width: 6vw;
+    height: 4vh;
+    margin: 2vh;
+    border: 0px;
+    background-color: cadetblue;
+    color: white;
+    font-size: 16px;
+    border-radius: 15px;
+}
+
+.centerButton{
+    display: flex;
+    justify-content: center;
+}
+
+.textField{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#signUpButton{
+    margin-left: 10px;
+    font-weight: 700;
+}
+
+#signUpButton:hover{
+    cursor: pointer;
+}
+
+.feedbackBox{
+    display: none;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    width: 100%;
+    height: 5vh;
+}
+
+.userCreated{
+    background-color: limegreen;
+}
+
+.userNotCreated{
+    background-color: orangered;
+}
+
+.failLogin{
+    background-color: coral;
+}
+
+.said{
+    font-size: 12px;
+    color: lightgray;
+}

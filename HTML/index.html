@@ -1,0 +1,113 @@
+<!doctype>
+<html>
+<head>
+    <title>NMSN</title>
+    <meta charset="utf-8">
+    <meta author="Elisabeth Nyström">
+    <link rel="stylesheet" href="../CSS/login.css">
+    <link rel="stylesheet" href="../CSS/chat.css">
+    <link rel="stylesheet" href="../CSS/friends.css">
+    <link rel="stylesheet" href="../CSS/register.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="loginPage">
+        <div class="userCreated feedbackBox">Wohoo! Your account has been created successfully.</div>
+        <div class="feedbackBox failLogin">Oh no, what happened? Wrong username or password?</div>
+        <div class="panel">
+            <img src="../IMAGES/userIcon.png">
+            <form action="/action_page.php">
+                <div class="inputFields">
+                    <input type="text" name="email" id="anInput" class="emailInputLogin clean" placeholder="Email-adress">
+                </div>
+                <div class="inputFields">
+                    <input type="password" name="password" id="anInput" class="pwInputLogin clean" placeholder="Password">
+                </div>
+                <div class="centerButton">
+                    <input type="submit" value="Log in" id="loginSubmit" class="button">
+                </div>
+            </form>
+            <div class="textField">
+                <p class="signUpText">Dont have an account?</p>
+                <div id="signUpButton">
+                    <p>Sign up!</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="registerPage">
+        <div class="userNotCreated feedbackBox">Oh no! Something went wrong.</div>
+        <div class="regContainer">
+            <button class="back" id="regBack"></button>
+            <img src="../IMAGES/userIcon.png">
+            <form>
+                <div class="inputFields">
+                    <input type="text" name="name" id="anInput" placeholder="Alias" class="regName">
+                </div>
+                <div class="inputFields">
+                    <input type="text" name="email" id="anInput" placeholder="Email-adress" class="regEmail">
+                </div>
+                <div class="inputFields">
+                    <input type="password" name="password" id="anInput" placeholder="Password" class="regPw">
+                </div>
+                <div class="inputFields">
+                    <input type="password" name="rePassword" id="anInput" placeholder="Re-enter password" class="passwordCheck">
+                </div>
+                <div class="centerButton">
+                    <input type="submit" value="Create Account" class="button regButton">
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="chatPage">
+        <div class="chatBox"></div>
+        <button class="back" id="chatBack"></button>
+        <div class="user One"></div>
+        <div class="user Two"></div>
+        <form class="typeAndSend">
+            <input type="text" name="message" id="messageInput" placeholder="Type your message here..">
+            <input type="submit" value="Send" id="messageSendButton" class="button">
+        </form>
+    </div>
+    <div class="friendsPage">
+        <div class="userPic My"></div>
+        <div class="userPanel">
+            <div class="nameAndStatus">
+                <p class="username"></p>
+                <form class="userStatus">
+                    <input type="text" name="status" id="status" placeholder="Whats´s up?.." class="status">
+                    <button type="submit" form="userStatus" id="submitStatus">Update</button>
+                </form>
+            </div>
+        </div>
+        <div class="RuSure">
+            <p>Are you sure you want to remove this friend?</p>
+            <div class="buttonFlex">
+                <button class="RuSureButton" id="removeFriend" class="button">Yes</button>
+                <button class="RuSureButton button" id="doNothing">No</button>
+            </div>
+        </div>
+        <div class="friendBox">
+        </div>
+        <div class="searchBox">
+            <p class=noMargin>SEARCH FRIENDS</p>
+            <input type="text" name="search" placeholder="Search friends" id="searchInput">
+            <img id="searchButton" src="../IMAGES/searchIcon.svg" alt="SÖK">
+            <div class="searchResults"></div>
+            <div class="requestMenu">
+                <div class="menuItem in">Incoming</div>
+                <div class="menuItem out">Outgoing</div>
+            </div>
+            <div class="incoming request">Nothing</div>
+            <div class="outgoing request">Nothing</div>
+        </div>
+    </div>
+    <script src="../JAVASCRIPT/jquery-3.4.1.min.js"></script>
+    <script src="../JAVASCRIPT/showPages.js"></script>
+    <script src="../JAVASCRIPT/chat.js"></script>
+    <script src="../JAVASCRIPT/register.js"></script>
+    <script src="../JAVASCRIPT/login.js"></script>
+    <script src="../JAVASCRIPT/search.js"></script>
+    <script src="../JAVASCRIPT/friends.js"></script>
+</body>
+</html>

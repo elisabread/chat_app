@@ -1,0 +1,42 @@
+.registerPage{
+    width: 40vw;
+    height: 80vh;
+    font-family: 'Roboto', sans-serif;
+}
+
+.regContainer{
+    background-color: white;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.regButton{
+    width: 10vw;
+}
+
+.back{
+    position: absolute;
+    z-index: 10;
+    left: 88%;
+    bottom: 88%;
+    background-color: transparent;
+    background-image: url("../IMAGES/back.svg");
+    background-size: cover;
+    height: 2vw;
+    width: 2vw;
+    border: 0px;
+}
+
+#regBack{
+    position: absolute;
+    z-index: 10;
+    left: 65%;
+    bottom: 82%;
+}
+
+.back:hover{
+    cursor: pointer;
+}
